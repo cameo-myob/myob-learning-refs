@@ -1,8 +1,33 @@
 # Beginner Java Reference
 
-- Many modern languages are designed to compile into CPU specific executable code
-- A Java compiler outputs _bytecode_, which is then executed by the _Java Virtual Machine (JVM)_
-- Java is an Object-Oriented Programming language
+- [A Basic Java Program](#a-basic-java-program)
+- [Primitive Data Types](#primitive-data-types)
+- [Type Conversion](#type-conversion)
+- [Operator Precedence](#operator-precedence)
+- [Access Modifiers](#access-modifiers)
+- [Static vs Non-Static Methods](#static-vs-non-static-methods)
+- [Void Methods](#void-methods)
+- [Data Types as Objects](#data-types-as-objects)
+- [Data Structures](#data-structures)
+    - [Arrays](#arrays)
+    - [Lists](#lists)
+    - [ArrayList vs LinkedList](#arraylist-vs-linkedlist)
+    - [Sets](#sets)
+    - [Maps](#maps)
+- [Accessors and Mutators](#accessors-and-mutators)
+- [Class Relationships](#class-relationships)
+- [This Keyword](#this-keyword)
+- [Final Keyword](#final-keyword)
+- [Super Keyword](#super-keyword)
+- [Abstract Classes](#abstract-classes)
+- [Interfaces](#interfaces)
+- [Interfaces vs Abstract Classes](#interfaces-vs-abstract-classes)
+- [Constructors](#constructors)
+ 
+
+
+Many modern languages are designed to compile into CPU specific executable code. A Java compiler outputs _bytecode_, which is then executed by the _Java Virtual Machine (JVM)_. Java is an Object-Oriented programming language.
+
 - Uses camelCase for methods and variables, TitleCase for class names
 - Variable names can start with a letter, a digit, a dollar sign or an underscore
 - Java only passes arguments by value, not by reference
@@ -92,7 +117,7 @@ Void methods such as `public void methodname` do not return a value.
 #### Bounds Checking
 - Use `length - 1` to find array bounds
 
-### List
+### Lists
 - An ordered collection of elements
 - Can contain duplicates
 - Useful for positional access and insertion, search, iteration and range viewing
@@ -103,7 +128,6 @@ Void methods such as `public void methodname` do not return a value.
 
 ### ArrayList vs LinkedList
 - ArrayList is like a dynamic array - can change size as needed
-- LinkedList is implemented like a double linked list (??????)
 - LinkedList is faster for add/remove operations, but slower for gets and sets
 - LinkedList also implements Queue interface, so adds methods like offer, peek and poll
 - ArrayList a better choice for most cases - LinkedList is only marginally faster for writes but is almost 6 times slower for reads
@@ -135,7 +159,7 @@ Void methods such as `public void methodname` do not return a value.
 - The more complex an object, the more likely it is to be an aggregate object
 - In `UML`, aggregate objects are represented with a diamond near the class that is the aggregate
 
-## `this`
+## this Keyword
 - Allows an object to refer to itself
 - Often used to distinguish parameters of a constructor from the corresponding instance variables
 ```java
@@ -147,7 +171,7 @@ public Account (String name, long acctNumber, double balance)
 }
 ```
 
-## `final`
+## final Keyword
 - Non-access modifier applicable to only a `variable`, `method`, or `class`
 - Used with variable to create constant variables
 - Used with methods to prevent method overriding
@@ -155,7 +179,7 @@ public Account (String name, long acctNumber, double balance)
 - Final variables must be initialised with a value
 - Naming convention is all uppercase with underscores separating words i.e. `final int MAX_WIDTH = 4`
 
-## `super`
+## super Keyword
 - Used to refer to a parent class
 - Commonly used to invoke a parent's constructor
 - Can also be used to invoke a superclass method

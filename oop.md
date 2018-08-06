@@ -10,20 +10,19 @@ Object Oriented Software is divided into objects which data and functions are bu
 ## Core Principles
 - Encapsulation: hiding internal complexities
 - Inheritance: inherit common functionality between different and related objects
-- Polymorphism: something (usually function) has one name but many implementations
+- Polymorphism: something (usually method) has one name but many implementations
 
 ### Encapsulation
 - Data and methods that change that data are enclosed in single unit
 - Also refers to hiding internal details/complexities, which allows us to hide details of an object from other objects (abstraction)
 - Uses getters and setters to access private information
 - Make as much information private as possible and use getters/setters to access
-- `right click > 'Source' > 'Generate Getters and Setters'`
 
 ### Inheritance
 - When a class includes a property of another class
 - Increases object reusability 
 - Child object includes the properties of its parent, these can be overwritten
-- Abstract classes can't be instantiated themselves but can pass on properties to its children
+- Abstract classes can't be instantiated themselves but can pass on properties to their children
 - Declared by `abstract` - `public abstract class Vehicle`
 - Class inheriting `extends` parent class - `public class Car extends Vehicle`
 - Use `super` to call functions from parent class
@@ -39,7 +38,7 @@ Object Oriented Software is divided into objects which data and functions are bu
 - Add new variables to the child class as needed, but don't shadow any inherited variables
 - Allow each class to manage it's own data. Use the `super` reference  to invoke a parent's constructor and to call overridden versions of methods if needed
 - Design a class hierarchy to fit the needs of the application, with attention to how it may be useful in the future
-- Override general methods such as `toString` and `equals` appropriately in child classes to that the inherited versions don't cause problems later
+- Override general methods such as `toString` and `equals` appropriately in child classes so that the inherited versions don't cause problems later
 - Use abstract classes to specify a common class interface for the concrete classes lower in the hierarchy
 - Use visibility modifiers carefully to provide needed access in derived classes without violating encapsulation
 
