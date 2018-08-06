@@ -41,15 +41,16 @@ class Example {
 
 
 ## Operator Precedence
-Highest | - | - | - | - | - | -
---- | --- | --- | --- | --- | --- | ---
-++ (postfix) | -- (postfix) | - | - | - | - | -
-+ (prefix) | -- (prefix) | ~ | ! | + (unary) | - (unary) | (typecast)
-* | / | % 
-+ | - 
->> | >>> | << 
-> | >= | < | <= | instanceof
-== | != 
+| Highest | . | . | . | . | . | . |
+| --- | --- | --- | --- | --- | --- | --- |
+| ++ (postfix) | -- (postfix) | . | . | . | . | . |
+| + (prefix) | -- (prefix) | ~ | ! | + (unary) | - (unary) | (typecast) |
+| * | / | % | . | . | . | . | 
+| + | - |  . | . | . | . | . |
+| >> | >>> | << |  . | . | . | . |
+| > | >= | < | <= | instanceof | . | . |
+| == | != | . | . | . | . | . |
+
 - Index operator ([]) has highest precedence of all Java operators
 
 
