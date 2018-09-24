@@ -23,6 +23,7 @@
 - [Interfaces](#interfaces)
 - [Interfaces vs Abstract Classes](#interfaces-vs-abstract-classes)
 - [Constructors](#constructors)
+- [Variable-Length Parameter Lists](#variable-length-parameter-lists)
  
 
 
@@ -216,3 +217,17 @@ Interface | All variables must be `public static final` | No constructors. An in
 - Provide at least a constructor without arguments, referred to as a `no-arg` or `no-agrument` constructor (e.g. `Circle()`), to make the class easy to extend
 - A class can be defined without constructors - a no-arg constructor with an empty body will be implicitly defined in the class
 - The above is called a `default constructor` and is provided automatically only if no constructors are explicitly defined in the class
+
+## Variable-Length Parameter Lists
+- Creating overloaded methods requires that we know how many parameters will be passed to it
+- Instead, using ellipsis in the definition of the parameters allows the method to accept any number of parameters
+```java
+public class Family
+{
+    private String[] members;
+    public Family (String ... names)
+    {
+        members = names;
+    }
+}
+```
